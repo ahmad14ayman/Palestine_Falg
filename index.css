@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.palastine {
+  width: 500px;
+  height: 250px;
+  background-image: linear-gradient(to bottom, black 32.5%, white 32.5%,
+      white 66.5%, green 33%);
+      position: relative;
+      border: 1px solid #eee;
+  
+}
+.palastine::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  border: 1px solid;
+  border-width: 125px 250px;
+  border-color: transparent transparent transparent red;
+  z-index: 10;
+}
