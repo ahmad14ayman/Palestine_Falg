@@ -20,6 +20,7 @@ body {
       white 66.5%, green 33%);
       position: relative;
       border: 1px solid #eee;
+      border-radius: 50%
   
 }
 .palastine::before {
@@ -33,4 +34,5 @@ body {
   border-width: 125px 250px;
   border-color: transparent transparent transparent red;
   z-index: 10;
+  border-radius: 50%
 }
